@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="webjars/bootstrap/css/bootstrap.min.css"
+        rel="stylesheet">
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<script src="/webjars/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container"><br/>
+    <div class="alert alert-success">         
+        <strong>Success!</strong> It is working as we expected.
+    </div>
+    <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div>name <span th:text="'Hello, ' + ${name}"></span></div>
+<div th:text=${name}></div>
+</div>
+
+</body>
+</html>
